@@ -1,0 +1,21 @@
+version: "3.10"
+
+services:
+  webhook:
+    image: webhook-alert-ftx:latest
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: webhook-alert-ftx
+    env_file:
+      # Step 1: Create your API Keys right now!
+      # https://ftx.com/referrals#a=BLACKARROWGANG
+      # Step 2: Then create this file with your FTX API keys.
+      # https://ftx.com/settings/api
+      - /app/env/secrets.env 
+    working_dir: /FastAPI_FTX/app
+    volumes:
+      - ./app:/FastAPI_FTX/app
+    ports:
+      - 8080:8080
+    restart: on-failure
