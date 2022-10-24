@@ -1,0 +1,19 @@
+{
+    "id": 191718737061,
+    "clientId": null,
+    "market": "SHIB/USD",
+    "type": "limit",
+    "side": "buy",
+    "price": 6.7e-06,
+    "size": 200000.0,
+    "status": "new",
+    "filledSize": 0.0,
+    "remainingSize": 200000.0,
+    "reduceOnly": false,
+    "liquidation": null,
+    "avgFillPrice": null,
+    "postOnly": false,
+    "ioc": false,
+    "createdAt": "2022-10-19T22:56:32.826279+00:00",
+    "future": null
+}
