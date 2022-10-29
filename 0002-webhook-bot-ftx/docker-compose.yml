@@ -13,9 +13,9 @@ services:
       # Step 2: Then create this file with your FTX API keys.
       # https://ftx.com/settings/api
       - /app/env/secrets.env 
-    working_dir: /FastAPI_FTX/app
+    working_dir: /0002-webhook-bot-ftx/app
     volumes:
-      - ./app:/FastAPI_FTX/app
+      - ./app:/0002-webhook-bot-ftx/app
     ports:
       - 8080:8080
     restart: on-failure
